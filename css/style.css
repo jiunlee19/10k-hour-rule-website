@@ -101,9 +101,9 @@ q{
     text-align: center;
 }
 .input-group p input{
-    width: 156px;
+    width: 9.75rem;
     height: 38px;
-    padding: 12px 40px;
+    padding: 0.75rem 2rem;
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
@@ -139,7 +139,7 @@ q{
     width: 2.688rem;
     height: 3rem;
     position: absolute;
-    bottom: -0.5rem; /* 왜 0.5rem이 button margin 1rem이랑 같지? */
+    bottom: 0;
     right: 0;
 }
 
@@ -213,7 +213,7 @@ footer p{
 dialog{
     visibility: hidden;
     /* 제출 시 hidden */
-    
+
     position: absolute;
     top: 50%;
     left: 50%;
