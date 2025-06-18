@@ -8,19 +8,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
 </head>
 <body>
     <div class="wrap">
@@ -33,17 +20,27 @@
             <q>연습은 어제의 당신보다 당신을 더 낫게 만든다.</q>
             <section class="explanation">
                 <h2 class="sr-only">1만 시간의 법칙 소개</h2>
-                <p><strong>1만 시간의 법칙</strong>은<br>
-                어떤 분야의 전문가가 되기 위해서는<br>
-                최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+                <img src="./img/“.png" alt="">
+                <p>
+                    <span><strong>1만 시간의 법칙</strong>은</span><br>
+                    <span>어떤 분야의 전문가가 되기 위해서는</span><br>
+                    <span>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span> 
+            </p>
+                <img src="./img/”.png" alt="">
             </section>
     
             <section class="input-group">
                 <h2 class="sr-only">1만 시간의 법칙 적용해보기</h2>
                 <p>나는<input type="text" placeholder="예)프로그래밍"><label for=""></label>전문가가 될 것이다.</p>
-                <p>그래서 앞으로 매일 하루에<input type="number" placeholder="예)5시간"><label for=""></label>시간씩 훈련할 것이다.</p>
+                <p>
+                    <span>그래서 앞으로 매일 하루에</span>
+                    <input type="number" placeholder="예)5시간"><label for=""></label>시간씩 훈련할 것이다.
+                </p>
                 <div>
-                    <button>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                    <button class="btn-design">
+                        <span>나는 며칠 동안 훈련을 해야</span> 
+                        <span>1만 시간이 될까?</span>
+                    </button>
                     <img src="./img/icon.png" alt="">
                 </div>
             </section>
@@ -51,16 +48,26 @@
             <section class="result">
                 <h2 class="sr-only">1만 시간의 법칙 실행 결과</h2>
                 <p>
-                    당신은<strong>프로그래밍</strong>전문가가 되기 위해서<br>
-                    대략 <strong>1000</strong>일 이상 훈련하셔야 합니다! :)
+                    <span>당신은<strong>프로그래밍</strong>전문가가 되기 위해서</span><br>
+                    <span>대략 <strong>1000</strong>일 이상 훈련하셔야 합니다! :)</span>
                 </p>
                 <div class="btn-group">
-                    <button>훈련하러 가기 GO! GO!</button>
-                    <button>공유하기</button>
+                    <button class="btn-design">훈련하러 가기 GO! GO!</button>
+                    <button class="btn-design">공유하기</button>
                 </div>
             </section>
         </main>
-        
+        <dialog open>
+            <div>
+                <p>화이팅!!</p>
+                <p>당신의 꿈을 응원합니다!</p>
+            </div>
+            <img src="./img/라이캣-img-sm.png" alt="">
+            <button class="btn-design">
+                <span>종료하고 진짜</span>
+                <span>훈련하러 가기 GO! GO!</span>
+            </button>
+        </dialog>
         <footer>
             <h2 class="sr-only">1만 시간의 법칙 저작권 정보</h2>
             <img src="./img/logo-m.png" alt="위니브 로고">
@@ -68,9 +75,6 @@
                 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
         </footer>
     </div>
-    <dialog>
-        
-    </dialog>
 
 </body>
 </html>

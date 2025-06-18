@@ -1,0 +1,262 @@
+:root{
+    --bg-purple:#5B2386;
+    --bg-white:#fff;
+    --text-quote:#F5DF4D;
+    --text-main:#fff;
+    --text-placeholder:#BABCBE;
+    --text-on-btn:#5B2386;
+    --btn-yellow:#FCEE21;
+    --btn-white:#fff;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.wrap{
+    width: 100vw;
+    height: auto;
+    background-color:var(--bg-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem 3rem;
+    box-sizing: border-box;
+
+    position: relative;
+}
+header h1 img{
+    width: 100%;
+    height: auto;
+    padding: 0 1.5rem 2rem;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+q{
+    margin-bottom:2rem;
+    font-family: "OTEnjoystoriesBA", sans-serif;
+    font-size: 1.375rem;
+    color: var(--text-quote);
+}
+.explanation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.75rem;
+}
+.explanation img{
+    width: 20px;
+    height: 18px;
+}
+.explanation p{
+    height: 4.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "GmarketSansMedium",sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color:var(--text-main);
+
+
+}
+.explanation p strong{
+    font-family: "GmarketSansBold";
+    font-weight: 700;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 52px;
+
+    font-family: "GmarketSansMedium",sans-serif;
+}
+.input-group p{
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--text-main);
+
+    line-height: 38px;
+}
+.input-group p span{
+    display: block;
+    text-align: center;
+}
+.input-group p input{
+    width: 156px;
+    height: 38px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.input-group p input::placeholder{
+    font-family: "GmarketSansMedium", sans-serif;
+    color: var(--text-placeholder);
+}
+.input-group p input:first-child{
+    margin: 0 10px;
+}
+.input-group p input:nth-child(2){
+    margin-right: 10px;
+}
+
+.input-group div{
+    margin-top: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.input-group div button{
+    background-color: var(--btn-yellow);
+    padding: 20px 38px;
+    margin: 0 3rem 1rem 40px;
+}
+.input-group div button span{
+    display: block;
+}
+.input-group div img{
+    width: 2.688rem;
+    height: 3rem;
+    position: absolute;
+    bottom: -0.5rem; /* 왜 0.5rem이 button margin 1rem이랑 같지? */
+    right: 0;
+}
+
+.result{
+    /* visibility: hidden; */
+    /* 제출 전 hidden으로 바꿔야 함 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 52px;
+}
+.result p{
+    font-family: "GmarketSansMedium",sans-serif;
+    color: var(--text-main);
+    font-size: 0.75rem;
+    
+    margin-bottom: 52px;
+
+    text-align: center;
+}
+.result p span{
+    display: block;
+}
+.result p span:first-child{
+    margin-bottom: 1rem;
+}
+.result p span strong{
+    font-family: "GmarketSansBold";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0.75rem;
+}
+.result .btn-group button{
+    padding: 1rem 1.5rem;
+}
+.result .btn-group button:first-child{
+    background-color: var(--btn-yellow);
+    margin-right: 8px;
+}
+.result .btn-group button:nth-child(2){
+    background-color: var(--btn-white);
+}
+
+.btn-design{
+    border: none;
+    border-radius: 12px;
+    font-family: "GmarketSansBold";
+    font-weight: 700;
+    color: var(--text-on-btn);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer img{
+    width: 125px;
+    height: 28px;
+    margin-bottom: 0.75rem;
+}
+footer p{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    color: var(--text-main);
+    text-align: center;
+}
+
+dialog{
+    visibility: hidden;
+    /* 제출 시 hidden */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--bg-white);
+    width: 330px;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    padding: 40px 45px 42px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.15);
+}
+dialog div p {
+    font-family: "OTEnjoystoriesBA";
+    color: var(--text-on-btn);
+    font-weight: bold;
+}
+dialog div p:first-child{
+    font-size: 4rem;
+}
+dialog div p:nth-child(2){
+    font-size: 2.25rem;
+}
+dialog img{
+    margin: 1.5rem 0;
+    
+}
+dialog button{
+    background-color: var(--btn-yellow);
+    padding: 20px 44.5px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 데스크톱 버전 */
+@media (min-width:600px) {
+    /* 글씨 크기 */
+    /* 글씨 줄바꿈 mayne word-break */
+    /* 이미지 크기 */
+    /* 모달 - 화이팅!!::after{content:"하트하트"} */
+}
