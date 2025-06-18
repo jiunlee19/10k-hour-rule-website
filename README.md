@@ -9,9 +9,9 @@ https://paullab.co.kr/10000hours.html 클론 코딩
     .   
     |-- css    
     |&nbsp;&nbsp;&nbsp;&nbsp;|-- reset.css    
-    |&nbsp;&nbsp;&nbsp;&nbsp;`-- index.css     
+    |&nbsp;&nbsp;&nbsp;&nbsp;|-- index.css     
     |-- img     
-    `-- index.html     
+    |-- index.html     
     
 -   [x] 피그마 파일 검토 및 디자인 요소 다운로드
 -   [x] 필요한 이미지, 아이콘, 폰트 등의 자산 추출/준비
