@@ -58,8 +58,8 @@ q{
     margin-bottom: 3.75rem;
 }
 .explanation img{
-    width: 20px;
-    height: 18px;
+    width: 1.25rem;
+    height: 1.125rem;
 }
 .explanation p{
     height: 4.25rem;
@@ -85,7 +85,7 @@ q{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 52px;
+    margin-bottom: 4.25rem;
 
     font-family: "GmarketSansMedium",sans-serif;
 }
@@ -94,7 +94,7 @@ q{
     font-weight: 300;
     color: var(--text-main);
 
-    line-height: 38px;
+    line-height: 2.375rem;
 }
 .input-group p span{
     display: block;
@@ -102,10 +102,10 @@ q{
 }
 .input-group p input{
     width: 9.75rem;
-    height: 38px;
+    height: 2.375rem;
     padding: 0.75rem 2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-sizing: border-box;
 }
 .input-group p input::placeholder{
@@ -113,51 +113,51 @@ q{
     color: var(--text-placeholder);
 }
 .input-group p input:first-child{
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 .input-group p input:nth-child(2){
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .input-group div{
-    margin-top: 80px;
+    margin-top: 5rem;
 
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
+    align-items: flex-start;
+    
 }
 .input-group div button{
     background-color: var(--btn-yellow);
-    padding: 20px 38px;
-    margin: 0 3rem 1rem 40px;
+    padding: 1.25rem 2.375rem;
+    margin: 0 0.25rem 0 3rem;
 }
 .input-group div button span{
     display: block;
-}
+}  
 .input-group div img{
     width: 2.688rem;
     height: 3rem;
-    position: absolute;
+    margin-top: 2.625rem;
+    /* position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0; */
 }
 
 .result{
-    /* visibility: hidden; */
-    /* 제출 전 hidden으로 바꿔야 함 */
+    /* display: none; */
     display: flex;
+    /* 제출 전 none으로 바꿔야 함 */
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 52px;
+    margin-bottom: 3.25rem;
 }
 .result p{
     font-family: "GmarketSansMedium",sans-serif;
     color: var(--text-main);
     font-size: 0.75rem;
     
-    margin-bottom: 52px;
+    margin-bottom: 3.25rem;
 
     text-align: center;
 }
@@ -178,7 +178,7 @@ q{
 }
 .result .btn-group button:first-child{
     background-color: var(--btn-yellow);
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 .result .btn-group button:nth-child(2){
     background-color: var(--btn-white);
@@ -186,7 +186,7 @@ q{
 
 .btn-design{
     border: none;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     font-family: "GmarketSansBold";
     font-weight: 700;
     color: var(--text-on-btn);
@@ -198,14 +198,14 @@ footer{
     align-items: center;
 }
 footer img{
-    width: 125px;
-    height: 28px;
+    width: 7.813rem;
+    height: 1.75rem;
     margin-bottom: 0.75rem;
 }
 footer p{
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 300;
-    font-size: 9px;
+    font-size: 0.563rem;
     color: var(--text-main);
     text-align: center;
 }
@@ -224,13 +224,13 @@ dialog{
     align-items: center;
 
     background-color: var(--bg-white);
-    width: 330px;
-    height: 500px;
+    width: 20.625rem;
+    height: 31.25rem;
     border: none;
-    border-radius: 20px;
-    padding: 40px 45px 42px;
+    border-radius: 1.25rem;
+    padding: 2.5rem 2.813rem 2.625rem;
     box-sizing: border-box;
-    box-shadow: 4px 4px 30px rgba(0,0,0,0.15);
+    box-shadow: 0.25rem 0.25rem 1.875rem rgba(0,0,0,0.15);
 }
 dialog div p {
     font-family: "OTEnjoystoriesBA";
@@ -249,12 +249,88 @@ dialog img{
 }
 dialog button{
     background-color: var(--btn-yellow);
-    padding: 20px 44.5px;
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.15);
+    padding: 1.25rem 2.781rem;
+    box-shadow: 0.125rem 0.25rem 0.625rem rgba(0,0,0,0.15);
 }
 
 /* 데스크톱 버전 */
-@media (min-width:600px) {
+@media (min-width:768px) {
+    .wrap{
+        width: auto;
+        height: auto;
+        padding: 7.5rem 0 6.25rem;
+    }
+    header{
+        margin-bottom: 3.25rem;
+    }
+    header h1 img{
+        width: 35.25rem;
+        height: 16.563rem;
+    }
+    main q{
+        font-size: 2.25rem;
+        margin-bottom: 5rem;
+    }
+    main .explanation{
+        margin-bottom: 6.25rem;
+    }
+    main .explanation p{
+        font-size: 1.125rem;
+        height: 5.313rem;
+    }
+    .input-group{
+        margin-bottom: 8.875rem;
+    }
+    main .input-group p{
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+    main .input-group p span{
+        display: inline-block;
+    }
+    main .input-group p input {
+        width: 14.25rem;
+        height: 3.5rem;
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+    }
+    main .input-group div{
+        margin-top: 7.5rem;
+    }
+    .input-group div button {
+        margin: 0 0.5rem 0 4.5rem; 
+    }
+    .input-group div button span {
+        display: inline-block;
+    }
+    .input-group div img{
+        width: 4rem;
+        height: 4.5rem;
+        margin-top: 22px;
+    }
+    .result{
+        margin-bottom: 7.5rem;
+    }
+    .result p{
+        font-size: 1.5rem;
+        margin-bottom: 7.5rem;
+    }
+    .result p span strong{
+        font-size: 4.5rem;
+    }
+    .btn-design{
+        font-size: 1.5rem;
+        padding: 1.25rem 3.125rem;
+    }
+    
+    footer img{
+        width: 10.5rem;
+        height: 2.25rem;
+        margin-bottom: 1.25rem;
+    }
+    footer p{
+        font-size: 0.75rem;
+    }
     /* 글씨 크기 */
     /* 글씨 줄바꿈 mayne word-break */
     /* 이미지 크기 */
