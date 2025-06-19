@@ -79,4 +79,6 @@ https://paullab.co.kr/10000hours.html 클론 코딩
 ### 7. 접근성 고려
 
 - [x]  적절한 대체 텍스트(alt) 제공   
-- [ ]  키보드 접근성 확인   
+- [x]  키보드 접근성 확인
+- [x]  유효성 검사 확인
+![img](./result/validator-result.png)
