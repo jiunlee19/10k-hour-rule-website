@@ -82,3 +82,7 @@ https://paullab.co.kr/10000hours.html 클론 코딩
 - [x]  키보드 접근성 확인
 - [x]  유효성 검사 확인
 ![img](./result/validator-result.png)
+
+### 8. 결과물
+![img(./result/desktop-result.png)]
+![img(./result/mobile-result.png)]
