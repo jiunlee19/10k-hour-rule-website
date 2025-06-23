@@ -84,5 +84,5 @@ https://paullab.co.kr/10000hours.html 클론 코딩
 ![img](./result/validator-result.png)
 
 ### 8. 결과물
-![img(./result/desktop-result.png)]
-![img(./result/mobile-result.png)]
+![img](./result/desktop-result.png)
+![img](./result/mobile-result.png)
